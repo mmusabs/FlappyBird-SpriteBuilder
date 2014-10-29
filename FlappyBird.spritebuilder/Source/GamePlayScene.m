@@ -16,14 +16,14 @@
 -(void)update:(CCTime)delta
 {
     // Increment time since last obstacle was added
-    timeSInceObstacle += delta; //delta is approx. 1/60
+    timeSinceObstacle += delta; //delta is approx. 1/60
     
     if (timeSinceObstacle > 2.0f){
         //Add a new obstacle
         [self addObstacle];
         
         //Then reset the timer
-        timeSInceObstacle = 0.0f;
+        timeSinceObstacle = 0.0f;
     }
     
 }
